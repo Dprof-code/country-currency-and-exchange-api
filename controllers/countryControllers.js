@@ -222,7 +222,7 @@ exports.getStatus = async (req, res) => {
     const [rows] = await connection.execute(`
   SELECT 
     COUNT(*) AS total_countries,
-    MAX(last_refreshed_at) AS last_refreshed
+    MAX(last_refreshed_at) AS last_refreshed_at
   FROM countries
 `);
     res.status(200).json(rows[0]);
