@@ -7,7 +7,7 @@ const connectDB = async () => {
       host: process.env.host,
       user: process.env.user,
       password: process.env.password,
-      database: "country_db",
+      database: process.env.database,
     });
 
     console.log("Connected to MySQL database!");
