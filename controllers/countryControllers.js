@@ -235,7 +235,7 @@ exports.getStatus = async (req, res) => {
 };
 
 exports.getGeneratedImage = async (req, res) => {
-  const imagePath = path.join(__dirname, "../cache/summary.png");
+  const imagePath = path.join(__dirname, "/cache/summary.png");
 
   fs.readFile(imagePath, (err, data) => {
     if (err) {
