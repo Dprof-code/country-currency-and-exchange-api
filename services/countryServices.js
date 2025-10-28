@@ -66,7 +66,7 @@ const computeEstimatedGDP = (population, exchangeRate) => {
 };
 
 exports.generateImage = async (summary) => {
-  const uploadDir = path.join(__dirname, "/cache");
+  const uploadDir = path.join(__dirname, "../cache");
   if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir);
   }
